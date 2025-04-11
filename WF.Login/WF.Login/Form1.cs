@@ -6,5 +6,15 @@ namespace WF.Login
         {
             InitializeComponent();
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Minimize_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
