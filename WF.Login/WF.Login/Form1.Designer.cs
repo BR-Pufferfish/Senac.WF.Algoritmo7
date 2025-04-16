@@ -87,6 +87,7 @@
             Minimize.SizeMode = PictureBoxSizeMode.Zoom;
             Minimize.TabIndex = 3;
             Minimize.TabStop = false;
+            Minimize.Click += Minimize_Click;
             // 
             // LoginGroup
             // 
@@ -170,6 +171,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Exit).EndInit();

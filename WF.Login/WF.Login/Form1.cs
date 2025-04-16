@@ -42,5 +42,22 @@ namespace WF.Login
                 Application.Exit();
             }
         }
+
+        private void Minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var sair = MessageBox.Show("Quer realmente sair? Dados não salvos serão perdidos.",
+                "Sair",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+            if (sair == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
