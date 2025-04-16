@@ -33,16 +33,11 @@
             Exit = new PictureBox();
             Minimize = new PictureBox();
             LoginGroup = new GroupBox();
-            txt_username = new TextBox();
-            txt_password = new TextBox();
-            btn_login = new Button();
-            pictureBox1 = new PictureBox();
             lnk_recovery = new LinkLabel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Exit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Minimize).BeginInit();
             LoginGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -62,7 +57,6 @@
             Exit.Size = new Size(30, 30);
             Exit.TabIndex = 2;
             Exit.TabStop = false;
-            Exit.Click += Exit_Click;
             // 
             // Minimize
             // 
@@ -71,7 +65,6 @@
             Minimize.Size = new Size(30, 30);
             Minimize.TabIndex = 3;
             Minimize.TabStop = false;
-            Minimize.Click += Minimize_Click;
             // 
             // LoginGroup
             // 
@@ -154,14 +147,12 @@
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
-            Opacity = 0.8D;
             Text = "Form1";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)Exit).EndInit();
             ((System.ComponentModel.ISupportInitialize)Minimize).EndInit();
             LoginGroup.ResumeLayout(false);
             LoginGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
