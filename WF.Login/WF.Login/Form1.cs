@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace WF.Login
 {
     public partial class Form1 : Form
@@ -58,6 +60,18 @@ namespace WF.Login
             {
                 Application.Exit();
             }
+        }
+
+        private void lnk_fitgirl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://fitgirl-repacks.site/popular-repacks/");
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var formPrincipal = new form_Home();
+            formPrincipal.Show();
         }
     }
 }

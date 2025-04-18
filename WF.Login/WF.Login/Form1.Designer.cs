@@ -34,15 +34,17 @@
             Exit = new PictureBox();
             Minimize = new PictureBox();
             LoginGroup = new GroupBox();
-            lnk_recovery = new LinkLabel();
             btn_login = new Button();
             txt_password = new TextBox();
             txt_username = new TextBox();
+            lnk_fitgirl = new LinkLabel();
+            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Exit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Minimize).BeginInit();
             LoginGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -93,7 +95,6 @@
             // 
             LoginGroup.BackColor = Color.Black;
             LoginGroup.CausesValidation = false;
-            LoginGroup.Controls.Add(lnk_recovery);
             LoginGroup.Controls.Add(btn_login);
             LoginGroup.Controls.Add(txt_password);
             LoginGroup.Controls.Add(txt_username);
@@ -107,17 +108,6 @@
             LoginGroup.TabStop = false;
             LoginGroup.Text = "Login";
             // 
-            // lnk_recovery
-            // 
-            lnk_recovery.AutoSize = true;
-            lnk_recovery.Font = new Font("Segoe UI", 10F);
-            lnk_recovery.Location = new Point(293, 185);
-            lnk_recovery.Name = "lnk_recovery";
-            lnk_recovery.Size = new Size(139, 23);
-            lnk_recovery.TabIndex = 0;
-            lnk_recovery.TabStop = true;
-            lnk_recovery.Text = "Recuperar Senha";
-            // 
             // btn_login
             // 
             btn_login.BackColor = Color.DarkSeaGreen;
@@ -129,6 +119,7 @@
             btn_login.TabIndex = 3;
             btn_login.Text = "Entrar";
             btn_login.UseVisualStyleBackColor = false;
+            btn_login.Click += btn_login_Click;
             // 
             // txt_password
             // 
@@ -158,18 +149,44 @@
             txt_username.Enter += txt_username_Enter;
             txt_username.Leave += txt_username_Leave;
             // 
+            // lnk_fitgirl
+            // 
+            lnk_fitgirl.AutoSize = true;
+            lnk_fitgirl.Font = new Font("Segoe UI", 10F);
+            lnk_fitgirl.Location = new Point(666, 422);
+            lnk_fitgirl.Name = "lnk_fitgirl";
+            lnk_fitgirl.Size = new Size(134, 23);
+            lnk_fitgirl.TabIndex = 0;
+            lnk_fitgirl.TabStop = true;
+            lnk_fitgirl.Text = "Procurando ela?";
+            lnk_fitgirl.LinkClicked += lnk_fitgirl_LinkClicked;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(628, 418);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(32, 32);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(800, 450);
+            Controls.Add(lnk_fitgirl);
+            Controls.Add(pictureBox2);
             Controls.Add(LoginGroup);
             Controls.Add(Minimize);
             Controls.Add(Exit);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             FormClosing += Form1_FormClosing;
             panel1.ResumeLayout(false);
@@ -178,7 +195,9 @@
             ((System.ComponentModel.ISupportInitialize)Minimize).EndInit();
             LoginGroup.ResumeLayout(false);
             LoginGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -191,6 +210,7 @@
         private PictureBox pictureBox1;
         private Button btn_login;
         private TextBox txt_password;
-        private LinkLabel lnk_recovery;
+        private LinkLabel lnk_fitgirl;
+        private PictureBox pictureBox2;
     }
 }
