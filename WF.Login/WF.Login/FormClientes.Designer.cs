@@ -147,6 +147,7 @@
             btn_Pagamentos.TabIndex = 4;
             btn_Pagamentos.Text = "Pagamentos";
             btn_Pagamentos.UseVisualStyleBackColor = false;
+            btn_Pagamentos.Click += btn_Pagamentos_Click;
             // 
             // btn_Clientes
             // 

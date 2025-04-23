@@ -34,5 +34,11 @@ namespace WF.Login
             this.Hide();
             new form_Pedidos().Show();
         }
+
+        private void btn_Pagamentos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new form_Pagamento().Show();
+        }
     }
 }
