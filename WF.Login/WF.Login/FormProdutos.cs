@@ -22,5 +22,17 @@ namespace WF.Login
             this.Hide();
             new form_Produtos().Show();
         }
+
+        private void btn_Clientes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new form_Cliente().Show();
+        }
+
+        private void btn_Pedidos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new form_Pedidos().Show();
+        }
     }
 }

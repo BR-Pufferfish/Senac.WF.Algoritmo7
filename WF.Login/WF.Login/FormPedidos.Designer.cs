@@ -161,6 +161,7 @@
             btn_Clientes.TabIndex = 2;
             btn_Clientes.Text = "Clientes";
             btn_Clientes.UseVisualStyleBackColor = false;
+            btn_Clientes.Click += btn_Clientes_Click;
             // 
             // btn_Pedidos
             // 
@@ -176,6 +177,7 @@
             btn_Pedidos.TabIndex = 3;
             btn_Pedidos.Text = "Pedidos";
             btn_Pedidos.UseVisualStyleBackColor = false;
+            btn_Pedidos.Click += btn_Pedidos_Click;
             // 
             // pictureBox1
             // 
