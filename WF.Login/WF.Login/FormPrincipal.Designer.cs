@@ -141,6 +141,7 @@
             btn_Produtos.TabIndex = 1;
             btn_Produtos.Text = "Produtos";
             btn_Produtos.UseVisualStyleBackColor = false;
+            btn_Produtos.Click += btn_Produtos_Click;
             // 
             // btn_Pagamentos
             // 

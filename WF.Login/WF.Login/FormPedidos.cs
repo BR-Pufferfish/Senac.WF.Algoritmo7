@@ -16,5 +16,11 @@ namespace WF.Login
         {
             InitializeComponent();
         }
+
+        private void btn_Produtos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new form_Produtos().Show();
+        }
     }
 }
