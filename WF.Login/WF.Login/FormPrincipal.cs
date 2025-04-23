@@ -40,5 +40,11 @@ namespace WF.Login
             this.Hide();
             new form_Pagamento().Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new form_Home().Show();
+        }
     }
 }
